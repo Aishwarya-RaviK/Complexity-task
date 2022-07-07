@@ -16,4 +16,86 @@ for(j=N;j>i;j--){
 a=a+i+j;
 }
 }
-Time complexity = O(
+Time complexity = O(N^2)
+
+PROGRAM 3:
+int i,j,k=0;
+for(i=n/2;i<=n;i++){
+  for(j=2;j<=n;j=j*2){
+    k=k+n/2;
+  }
+}
+Time complexity= O(n/2*log(n)) = O(n log(n))
+
+PROGRAM 4:
+int a=0, i=N;
+while(i>0){
+a=a+i;
+i=i/2;
+}
+Time complexity = O(log(N))
+
+PROGRAM 5:
+for(var i=0;i<n;i++)
+i=i*k
+Time complexity = O(log(n))
+
+PROGRRAM 6:
+def fun(n):
+if(n<5):
+  print("GeeksforGeeks",end="")
+  else:
+    for i in range(n):
+      print(i,end="")
+Time complexity = "for if else it traverses once so O(1)" , "in the else case since there is for loop it iterates n times"
+Final output = O(n)
+
+PROGRAM 7:
+def fun(a,b):
+while(a!=b):
+  if(a>b):
+    a=a-b
+  else:
+    b=b-a
+Time complexity = O(log n)
+    
+PROGRAM 8:
+void fun(int n)
+{
+for (int i =0; i*i<n;i++)
+cout<<"GeeksforGeeks";
+}
+Time complexity = O(n)
+
+PROGRAM 9:
+void fun(int n, int x)
+{
+for (int i=1; i<n; i=i*x) or for(inti=n;i>=1;i=i/x)
+    cout<<"GeeksforGeeks";
+    }
+Time complexity = O(log n)
+
+PROGRAM 10:
+void fun(int n)
+{
+for(int i=0;i<n/2;i++)
+  for(intj=1;j+n/2<=n;j++)
+    for(int k =1;k<+n;k=k*2)
+      cout<<"GeeksforGeeks";
+      }
+Time complexity = O(logn^3)
+
+PROGRAM 11:
+  void fun(int n)
+  {
+  int i = 1;
+  while(i<n){
+  intj=n;
+  while(j>0){
+  j=j/2;
+  }
+  i=i*2;
+  }
+  }
+ Time complexity = O(n log(n)) 
+
